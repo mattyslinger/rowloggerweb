@@ -138,6 +138,16 @@ export default function Privacy() {
               </p>
             </section>
 
+            <section>
+              <h2 className="text-2xl font-bold text-primary mb-4">11. Export Compliance</h2>
+              <p className="text-slate-600 leading-relaxed">
+                You agree to comply with all applicable export and import control laws and regulations in your use 
+                of RowLogger. The app and related technology may be subject to U.S. export control laws, including 
+                the Export Administration Regulations. You will not use or otherwise export or re-export RowLogger 
+                except as authorized by United States law and the laws of the jurisdiction in which the app was obtained.
+              </p>
+            </section>
+
             <section className="border-t border-slate-200 pt-8">
               <p className="text-sm text-slate-500 italic">
                 By using RowLogger, you agree to the collection and use of information in accordance with this Privacy Policy.
