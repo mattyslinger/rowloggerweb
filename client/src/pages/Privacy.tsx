@@ -134,7 +134,7 @@ export default function Privacy() {
                 If you have questions or concerns about this Privacy Policy, please contact us:
               </p>
               <p className="text-slate-600">
-                Email: <a href="mailto:support@rowlogger.app" className="text-primary hover:underline">support@rowlogger.app</a>
+                Email: <a href="mailto:contact@rowlogger.app" className="text-primary hover:underline">contact@rowlogger.app</a>
               </p>
             </section>
 
