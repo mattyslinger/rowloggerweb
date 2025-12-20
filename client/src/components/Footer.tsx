@@ -10,7 +10,7 @@ export function Footer() {
               className="h-12 w-auto object-contain mb-2 mx-auto md:mx-0"
             />
             <p className="text-slate-600 text-sm max-w-xs">
-              <span className="brand-text">RowLogger</span>: Lightweight indoor rowing tracking. Simple, powerful, focused.
+              Lightweight indoor rowing tracking. Simple, powerful, focused.
             </p>
           </div>
           
