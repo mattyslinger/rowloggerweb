@@ -4,7 +4,11 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
-            <h3 className="text-2xl font-bold font-display mb-2">RowLogger</h3>
+            <img 
+              src="/rowlogger-logo.png" 
+              alt="RowLogger" 
+              className="h-12 w-auto object-contain mb-2 mx-auto md:mx-0"
+            />
             <p className="text-slate-300 text-sm max-w-xs">
               Lightweight indoor rowing tracking. Simple, powerful, focused.
             </p>
