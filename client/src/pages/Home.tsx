@@ -1,7 +1,8 @@
+
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { VideoCard } from "@/components/VideoCard";
-import { Loader2, Shield, Lock, Eye, PlayCircle } from "lucide-react";
+import { Loader2, BarChart3, TrendingUp, Download, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -49,31 +50,31 @@ export default function Home() {
               transition={{ duration: 0.6 }}
             >
               <span className="inline-block px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold tracking-wide uppercase mb-6 border border-blue-100">
-                Performance Analytics
+                Simple. Powerful. Focused.
               </span>
               <h1 className="text-5xl md:text-7xl font-bold font-display text-primary mb-6 leading-[1.1]">
-                Master Your Stroke.<br />
+                Indoor Rowing Tracking.<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
-                  Protect Your Data.
+                  Without the Clutter.
                 </span>
               </h1>
               <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                RowLogger provides advanced telemetry for rowing performance while ensuring your personal data remains secure and private.
+                RowLogger is a lightweight tracking app for indoor rowing. Log your sessions, track your PBs, analyze your power curve, and monitor your progress—no bells and whistles, just what you need.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
-                  href="#videos"
+                  href="#features"
                   className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white transition-all duration-200 bg-primary rounded-full hover:bg-primary/90 hover:shadow-lg hover:-translate-y-0.5"
                 >
-                  <PlayCircle className="w-5 h-5 mr-2" />
-                  Training Videos
+                  <BarChart3 className="w-5 h-5 mr-2" />
+                  Explore Features
                 </a>
                 <a 
-                  href="#privacy"
+                  href="#videos"
                   className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-primary transition-all duration-200 bg-white border border-slate-200 rounded-full hover:bg-slate-50 hover:border-slate-300"
                 >
-                  Privacy Policy
+                  Training Videos
                 </a>
               </div>
             </motion.div>
@@ -81,20 +82,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PRIVACY POLICY SECTION */}
-      <section id="privacy" className="py-24 bg-white">
+      {/* FEATURES SECTION */}
+      <section id="features" className="py-24 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold font-display text-primary mb-4">Privacy & Security</h2>
-              <p className="text-slate-600 text-lg">How we handle and protect your rowing data.</p>
+              <h2 className="text-3xl md:text-4xl font-bold font-display text-primary mb-4">Everything You Need. Nothing You Don't.</h2>
+              <p className="text-slate-600 text-lg">Track your progress with focused features designed for serious rowers.</p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
               {[
-                { icon: Shield, title: "Data Collection", text: "We only collect essential telemetry data (stroke rate, speed, distance) required for performance analysis." },
-                { icon: Lock, title: "Secure Storage", text: "All training logs are encrypted at rest and in transit. Your personal metrics are never sold to third parties." },
-                { icon: Eye, title: "Transparency", text: "You have full control over your data. Export or delete your training history at any time through the app settings." }
+                { 
+                  icon: BarChart3, 
+                  title: "Simple Session Logging", 
+                  text: "Quickly log your indoor rowing sessions with distance, power, splits, and time. Get straight to training without unnecessary complexity." 
+                },
+                { 
+                  icon: TrendingUp, 
+                  title: "PB Tracking", 
+                  text: "Automatically track your personal bests across all raced distances. See your progress at a glance and know when you've hit a new milestone." 
+                },
+                { 
+                  icon: BarChart3, 
+                  title: "Performance Summary", 
+                  text: "Monitor your overall progress with workout volume summaries. Track your consistency and total training load over time." 
+                },
+                { 
+                  icon: TrendingUp, 
+                  title: "Power Curve Analysis", 
+                  text: "Visualize your performance across varying distances compared to your previous metrics. Identify strengths and areas for improvement." 
+                }
               ].map((item, i) => (
                 <div key={i} className="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-md transition-shadow">
                   <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4 text-primary">
@@ -106,33 +124,37 @@ export default function Home() {
               ))}
             </div>
 
-            <div className="prose prose-slate max-w-none bg-slate-50 p-8 md:p-12 rounded-3xl border border-slate-100">
-              <h3>Detailed Privacy Policy</h3>
-              <p>
-                <strong>Last Updated: June 15, 2024</strong>
-              </p>
-              <p>
-                At RowLogger, we respect your privacy and are committed to protecting it through our compliance with this policy. 
-                This policy describes the types of information we may collect from you or that you may provide when you visit the website 
-                RowLogger or use our mobile application.
-              </p>
-              <h4>1. Information We Collect</h4>
-              <p>
-                We collect several types of information from and about users of our Application, including information by which you may be personally identified, such as name, email address, and rowing statistics.
-              </p>
-              <h4>2. How We Use Your Information</h4>
-              <p>
-                We use information that we collect about you or that you provide to us, including any personal information:
-              </p>
-              <ul>
-                <li>To present our Application and its contents to you.</li>
-                <li>To provide you with information, products, or services that you request from us.</li>
-                <li>To fulfill any other purpose for which you provide it.</li>
-              </ul>
-              <h4>3. Data Security</h4>
-              <p>
-                We have implemented measures designed to secure your personal information from accidental loss and from unauthorized access, use, alteration, and disclosure.
-              </p>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl border border-blue-100">
+                <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4 text-primary">
+                  <Zap className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-primary mb-2">Quick Workout Challenges</h3>
+                <p className="text-slate-600 leading-relaxed">
+                  Get started fast with easy workout challenges. Perfect for when you want to jump into a session without planning.
+                </p>
+              </div>
+              <div className="p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl border border-blue-100">
+                <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-4 text-primary">
+                  <Download className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-bold text-primary mb-2">Import & Export Data</h3>
+                <p className="text-slate-600 leading-relaxed">
+                  Your data is yours. Easily import and export your training history whenever you need it.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-12 text-center">
+              <p className="text-slate-600 mb-4">Coming soon to</p>
+              <a 
+                href="https://rowlogger.app" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl font-bold text-primary hover:text-blue-600 transition-colors"
+              >
+                rowlogger.app
+              </a>
             </div>
           </div>
         </div>

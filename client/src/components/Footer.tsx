@@ -6,13 +6,13 @@ export function Footer() {
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold font-display mb-2">RowLogger</h3>
             <p className="text-slate-300 text-sm max-w-xs">
-              Performance tracking and analytics for competitive rowing.
+              Lightweight indoor rowing tracking. Simple, powerful, focused.
             </p>
           </div>
           
           <div className="flex gap-6 text-sm text-slate-300">
-            <a href="#privacy" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="mailto:support@rowlogger.com" className="hover:text-white transition-colors">Contact Support</a>
+            <a href="#features" className="hover:text-white transition-colors">Features</a>
+            <a href="mailto:support@rowlogger.app" className="hover:text-white transition-colors">Contact Support</a>
           </div>
         </div>
         
