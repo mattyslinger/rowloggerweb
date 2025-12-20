@@ -1,6 +1,7 @@
 import { build as esbuild } from "esbuild";
 import { build as viteBuild } from "vite";
-import { rm, readFile } from "fs/promises";
+import { rm, readFile, copyFile, readdir } from "fs/promises";
+import { join } from "path";
 
 // server deps to bundle to reduce openat(2) syscalls
 // which helps cold start times
@@ -37,6 +38,23 @@ async function buildAll() {
 
   console.log("building client...");
   await viteBuild();
+
+  // Copy public assets to docs
+  console.log("copying public assets...");
+  const publicDir = join(process.cwd(), "client", "public");
+  const docsDir = join(process.cwd(), "docs");
+
+  try {
+    const files = await readdir(publicDir);
+    for (const file of files) {
+      if (file !== "404.html") { // Skip 404.html as it's handled separately
+        await copyFile(join(publicDir, file), join(docsDir, file));
+      }
+    }
+  } catch (error) {
+    console.error("Error copying public assets:", error);
+  }
+
 
   console.log("building server...");
   const pkg = JSON.parse(await readFile("package.json", "utf-8"));
