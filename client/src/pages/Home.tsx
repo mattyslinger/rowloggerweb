@@ -54,7 +54,7 @@ export default function Home() {
                 Simple. Powerful. Focused.
               </span>
               <h1 className="text-5xl md:text-7xl font-bold font-display text-primary mb-6 leading-[1.1]">
-                Indoor Rowing Tracking.<br />
+                <span className="brand-text">Indoor Rowing Tracking.</span><br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
                   Without the Clutter.
                 </span>
@@ -88,7 +88,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-primary mb-4">
-              Download RowLogger
+              Download <span className="brand-text">RowLogger</span>
             </h2>
             <p className="text-slate-600 text-lg mb-10">
               Get started tracking your rowing sessions on your mobile device

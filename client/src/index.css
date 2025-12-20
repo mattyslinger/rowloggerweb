@@ -17,7 +17,8 @@
 :root {
   /* Rowing Color Palette - Orange, Yellow-green, Navy, Red */
   --font-sans: 'Inter', sans-serif;
-  --font-display: 'Bauhaus 93', 'Oswald', sans-serif;
+  --font-display: 'Montserrat', sans-serif;
+  --font-brand: 'Bauhaus 93', 'Impact', sans-serif;
 
   --background: 48 20% 97%; /* Soft cream */
   --foreground: 206 96% 15%; /* Deep navy blue #02264C */
@@ -69,7 +70,11 @@
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    @apply tracking-tight font-medium;
+    @apply tracking-tight font-semibold;
+  }
+  .brand-text {
+    font-family: var(--font-brand);
+    @apply tracking-normal;
   }
 }
 
