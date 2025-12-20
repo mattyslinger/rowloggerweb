@@ -54,7 +54,8 @@ export default function Home() {
                 Simple. Powerful. Focused.
               </span>
               <h1 className="text-5xl md:text-7xl font-bold font-display text-primary mb-6 leading-[1.1]">
-                Indoor Rowing Tracking. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Without the Clutter.</span>
+                Indoor Rowing Tracking.<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Without the Clutter.</span>
               </h1>
               <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
                 <span className="brand-text">RowLogger</span> is a lightweight tracking app for indoor rowing. Log your sessions, track your PBs, analyze your power curve, and monitor your progress—no bells and whistles, just what you need.
