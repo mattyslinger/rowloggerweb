@@ -60,7 +60,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                RowLogger is a lightweight tracking app for indoor rowing. Log your sessions, track your PBs, analyze your power curve, and monitor your progress—no bells and whistles, just what you need.
+                <span className="brand-text">RowLogger</span> is a lightweight tracking app for indoor rowing. Log your sessions, track your PBs, analyze your power curve, and monitor your progress—no bells and whistles, just what you need.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -88,7 +88,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-primary mb-4">
-              Download RowLogger
+              Download <span className="brand-text">RowLogger</span>
             </h2>
             <p className="text-slate-600 text-lg mb-10">
               Get started tracking your rowing sessions on your mobile device
@@ -200,7 +200,7 @@ export default function Home() {
                 href="https://rowlogger.app" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-2xl font-bold text-primary hover:text-blue-600 transition-colors"
+                className="text-2xl font-bold text-primary hover:text-blue-600 transition-colors brand-text"
               >
                 rowlogger.app
               </a>
@@ -215,7 +215,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-primary mb-4">Training Resources</h2>
             <p className="text-slate-600 text-lg mb-12">
-              Tutorials and training sessions to help you improve your technique and get the most out of RowLogger.
+              Tutorials and training sessions to help you improve your technique and get the most out of <span className="brand-text">RowLogger</span>.
             </p>
             
             <div className="py-20 bg-white rounded-3xl border-2 border-dashed border-slate-300 shadow-sm">
