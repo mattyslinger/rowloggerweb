@@ -64,13 +64,6 @@ export function Navbar() {
               {link.name}
             </a>
           ))}
-          <a
-            href="#videos"
-            onClick={(e) => scrollToSection(e, "#videos")}
-            className="px-5 py-2.5 rounded-full bg-primary text-primary-foreground text-sm font-medium shadow-lg hover:shadow-xl hover:bg-primary/90 transition-all"
-          >
-            Watch Videos
-          </a>
         </div>
 
         {/* Mobile Menu Button */}
