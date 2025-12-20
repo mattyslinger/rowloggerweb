@@ -211,8 +211,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-3">Coming Soon</h3>
-                <p className="text-slate-500 text-lg max-w-md mx-auto">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 mb-3">Coming Soon</h3>
+                <p className="text-slate-500 text-sm sm:text-base md:text-lg max-w-md mx-auto px-4">
                   Training videos and tutorials are on the way. Check back soon for helpful content!
                 </p>
               </div>
