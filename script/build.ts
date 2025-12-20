@@ -2,7 +2,6 @@ import { build as esbuild } from "esbuild";
 import { build as viteBuild } from "vite";
 import { rm, readFile, copyFile, readdir } from "fs/promises";
 import { join } from "path";
-import sharp from "sharp";
 
 // server deps to bundle to reduce openat(2) syscalls
 // which helps cold start times
@@ -52,12 +51,6 @@ async function buildAll() {
         await copyFile(join(publicDir, file), join(docsDir, file));
       }
     }
-
-    // Convert favicon.png to favicon.ico
-    console.log("generating favicon.ico...");
-    await sharp(join(publicDir, "favicon.png"))
-      .resize(32, 32)
-      .toFile(join(docsDir, "favicon.ico"));
   } catch (error) {
     console.error("Error copying public assets:", error);
   }
