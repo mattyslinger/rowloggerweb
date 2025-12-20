@@ -51,6 +51,11 @@ async function buildAll() {
         await copyFile(join(publicDir, file), join(docsDir, file));
       }
     }
+
+    // Generate favicon.ico
+    console.log("generating favicon.ico...");
+    const { execSync } = await import("child_process");
+    execSync("node script/generate-favicon.js", { stdio: "inherit" });
   } catch (error) {
     console.error("Error copying public assets:", error);
   }
