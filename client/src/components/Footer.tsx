@@ -16,6 +16,7 @@ export function Footer() {
           
           <div className="flex gap-6 text-sm text-slate-600">
             <a href="#features" className="hover:text-slate-900 transition-colors">Features</a>
+            <a href="/privacy" className="hover:text-slate-900 transition-colors">Privacy Policy</a>
             <a href="mailto:support@rowlogger.app" className="hover:text-slate-900 transition-colors">Contact Support</a>
           </div>
         </div>
