@@ -53,11 +53,11 @@ export default {
         },
         ring: "hsl(var(--ring) / <alpha-value>)",
         chart: {
-          "1": "hsl(var(--chart-1) / <alpha-value>)",
-          "2": "hsl(var(--chart-2) / <alpha-value>)",
-          "3": "hsl(var(--chart-3) / <alpha-value>)",
-          "4": "hsl(var(--chart-4) / <alpha-value>)",
-          "5": "hsl(var(--chart-5) / <alpha-value>)",
+          "1": "hsl(var(--chart-1) / <alpha-value>)", /* Teal */
+          "2": "hsl(var(--chart-2) / <alpha-value>)", /* Coral */
+          "3": "hsl(var(--chart-3) / <alpha-value>)", /* Cyan */
+          "4": "hsl(var(--chart-4) / <alpha-value>)", /* Lime */
+          "5": "hsl(var(--chart-5) / <alpha-value>)", /* Navy */
         },
         sidebar: {
           ring: "hsl(var(--sidebar-ring) / <alpha-value>)",
