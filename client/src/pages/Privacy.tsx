@@ -140,11 +140,15 @@ export default function Privacy() {
 
             <section>
               <h2 className="text-2xl font-bold text-primary mb-4">11. Export Compliance</h2>
+              <p className="text-slate-600 leading-relaxed mb-4">
+                RowLogger is distributed internationally through Google Play and may be subject to U.S. export 
+                control laws, including the Export Administration Regulations (EAR). The app uses standard 
+                encryption for data security.
+              </p>
               <p className="text-slate-600 leading-relaxed">
                 You agree to comply with all applicable export and import control laws and regulations in your use 
-                of RowLogger. The app and related technology may be subject to U.S. export control laws, including 
-                the Export Administration Regulations. You will not use or otherwise export or re-export RowLogger 
-                except as authorized by United States law and the laws of the jurisdiction in which the app was obtained.
+                of RowLogger. You will not use or otherwise export or re-export RowLogger except as authorized by 
+                United States law and the laws of the jurisdiction in which the app was obtained.
               </p>
             </section>
 
