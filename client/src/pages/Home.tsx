@@ -191,18 +191,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-
-            <div className="mt-12 text-center">
-              <p className="text-slate-600 mb-4">Coming soon to</p>
-              <a 
-                href="https://rowlogger.app" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-2xl font-bold text-primary hover:text-blue-600 transition-colors brand-text"
-              >
-                rowlogger.app
-              </a>
-            </div>
           </div>
         </div>
       </section>
