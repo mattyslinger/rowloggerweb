@@ -42,10 +42,14 @@ export function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <a 
           href="#hero" 
-          className="text-2xl font-bold font-display tracking-tight text-primary hover:opacity-80 transition-opacity"
+          className="flex items-center hover:opacity-80 transition-opacity"
           onClick={(e) => scrollToSection(e, "#hero")}
         >
-          RowLogger
+          <img 
+            src="/attached_assets/small_icon_1024_1766230347010.png" 
+            alt="RowLogger" 
+            className="h-10 w-auto"
+          />
         </a>
 
         {/* Desktop Nav */}
