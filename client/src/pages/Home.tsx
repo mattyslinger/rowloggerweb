@@ -36,15 +36,6 @@ export default function Home() {
 
       {/* HERO SECTION */}
       <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-to-br from-slate-50 to-white">
-        {/* Hero Image - Large and Central */}
-        <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
-          <img 
-            src="/small_icon_1024_1766230347010.png" 
-            alt="Rowing" 
-            className="w-full max-w-4xl h-auto opacity-20 object-contain"
-          />
-        </div>
-
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <motion.div
