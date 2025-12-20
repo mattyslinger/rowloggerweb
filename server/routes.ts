@@ -29,24 +29,5 @@ export async function registerRoutes(
     }
   });
 
-  // Seed data if empty
-  const existingVideos = await storage.getVideos();
-  if (existingVideos.length === 0) {
-    await storage.createVideo({
-      title: "Getting Started with RowLogger",
-      description: "Learn the basics of tracking your rowing sessions.",
-      url: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder
-      thumbnailUrl: "https://images.unsplash.com/photo-1547483954-3fb180c96bfa",
-      category: "training"
-    });
-    await storage.createVideo({
-      title: "Advanced Features",
-      description: "Deep dive into data analysis and export tools.",
-      url: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder
-      thumbnailUrl: "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff",
-      category: "training"
-    });
-  }
-
   return httpServer;
 }

@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { insertVideoSchema, videos } from './schema';
+import { insertVideoSchema, type Video } from './schema';
 
 export const errorSchemas = {
   validation: z.object({
@@ -20,7 +20,7 @@ export const api = {
       method: 'GET' as const,
       path: '/api/videos',
       responses: {
-        200: z.array(z.custom<typeof videos.$inferSelect>()),
+        200: z.array(z.custom<Video>()),
       },
     },
     create: {
@@ -28,7 +28,7 @@ export const api = {
       path: '/api/videos',
       input: insertVideoSchema,
       responses: {
-        201: z.custom<typeof videos.$inferSelect>(),
+        201: z.custom<Video>(),
         400: errorSchemas.validation,
       },
     },

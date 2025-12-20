@@ -1,15 +1,33 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { VideoCard } from "@/components/VideoCard";
-import { useVideos } from "@/hooks/use-videos";
 import { Loader2, Shield, Lock, Eye, PlayCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const { data: videos, isLoading, error } = useVideos();
+  // Static video data for GitHub Pages deployment
+  const videos = [
+    {
+      id: 1,
+      title: "Getting Started with RowLogger",
+      description: "Learn the basics of tracking your rowing sessions.",
+      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", 
+      thumbnailUrl: "https://images.unsplash.com/photo-1547483954-3fb180c96bfa",
+      category: "training"
+    },
+    {
+      id: 2,
+      title: "Advanced Features",
+      description: "Deep dive into data analysis and export tools.",
+      url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ", 
+      thumbnailUrl: "https://images.unsplash.com/photo-1599058945522-28d584b6f0ff",
+      category: "training"
+    }
+  ];
 
-  // Filter videos by category if needed, for now show all
-  const trainingVideos = videos || [];
+  const trainingVideos = videos;
+  const isLoading = false;
+  const error = null;
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-50 font-sans">
