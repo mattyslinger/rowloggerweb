@@ -35,11 +35,14 @@ export default function Home() {
       <Navbar />
 
       {/* HERO SECTION */}
-      <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white">
-        {/* Abstract Background Graphic */}
-        <div className="absolute inset-0 z-0 opacity-10 pointer-events-none">
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
-          <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-300 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4" />
+      <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-to-br from-slate-50 to-white">
+        {/* Hero Image - Large and Central */}
+        <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
+          <img 
+            src="/small_icon_1024_1766230347010.png" 
+            alt="Rowing" 
+            className="w-full max-w-4xl h-auto opacity-20 object-contain"
+          />
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -49,6 +52,13 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
+              <div className="mb-8 flex justify-center">
+                <img 
+                  src="/small_icon_1024_1766230347010.png" 
+                  alt="RowLogger" 
+                  className="w-48 h-48 object-contain drop-shadow-2xl"
+                />
+              </div>
               <span className="inline-block px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-semibold tracking-wide uppercase mb-6 border border-blue-100">
                 Simple. Powerful. Focused.
               </span>
