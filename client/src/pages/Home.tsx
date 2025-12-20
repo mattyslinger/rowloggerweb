@@ -221,41 +221,26 @@ export default function Home() {
       {/* TRAINING VIDEOS SECTION */}
       <section id="videos" className="py-24 bg-slate-50 border-t border-slate-200">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold font-display text-primary mb-4">Training Resources</h2>
-              <p className="text-slate-600 text-lg max-w-2xl">
-                Watch our latest tutorials and training sessions to improve your technique and get the most out of RowLogger.
-              </p>
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold font-display text-primary mb-4">Training Resources</h2>
+            <p className="text-slate-600 text-lg mb-12">
+              Tutorials and training sessions to help you improve your technique and get the most out of RowLogger.
+            </p>
+            
+            <div className="py-20 bg-white rounded-3xl border-2 border-dashed border-slate-300 shadow-sm">
+              <div className="mb-6">
+                <div className="w-20 h-20 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-4">
+                  <svg className="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-3">Coming Soon</h3>
+                <p className="text-slate-500 text-lg max-w-md mx-auto">
+                  Training videos and tutorials are on the way. Check back soon for helpful content!
+                </p>
+              </div>
             </div>
           </div>
-
-          {isLoading ? (
-            <div className="flex justify-center items-center min-h-[400px]">
-              <Loader2 className="w-12 h-12 text-primary animate-spin" />
-            </div>
-          ) : error ? (
-            <div className="text-center py-20 bg-white rounded-3xl border border-red-100 shadow-sm">
-              <p className="text-red-500 font-medium">Failed to load videos. Please try again later.</p>
-            </div>
-          ) : trainingVideos.length === 0 ? (
-            <div className="text-center py-20 bg-white rounded-3xl border border-slate-200 border-dashed">
-              <p className="text-slate-500 text-lg">No training videos available yet.</p>
-            </div>
-          ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {trainingVideos.map((video) => (
-                <VideoCard
-                  key={video.id}
-                  title={video.title}
-                  description={video.description}
-                  url={video.url}
-                  thumbnailUrl={video.thumbnailUrl}
-                  category={video.category}
-                />
-              ))}
-            </div>
-          )}
         </div>
       </section>
 
