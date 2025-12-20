@@ -46,9 +46,9 @@ export function Navbar() {
           onClick={(e) => scrollToSection(e, "#hero")}
         >
           <img
-            src="/rowlogger-logo.png"
+            src="/small_icon_1024_1766230347010.png"
             alt="RowLogger"
-            className="h-12 w-auto"
+            className="h-12 w-auto object-contain"
           />
         </a>
 
